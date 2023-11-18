@@ -1,0 +1,26 @@
+._navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+
+.layout {
+  /* display: flex; */
+  /* margin: 10px; */
+  /* border: 1px black solid; */
+  width: 95%;
+  /* margin: 10px auto; */
+  /* background-color: #888; */
+  height: 100vh;
+  display: flex;
+  /* position: relative; */
+  /* justify-content: space-around; */
+
+  /* overflow: hidden;
+  height: 100vh; */
+}
+
+
+

@@ -1,0 +1,29 @@
+.sidebar {
+  width: 300px;
+  background-color: #ececec73;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: none;
+}
+.pro-container {
+  width: calc(100% - 300px);
+  position: absolute;
+  top: 0;
+  left: 300px;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.navbar {
+  width: 100%;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
