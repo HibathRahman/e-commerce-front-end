@@ -36,7 +36,7 @@ function App() {
         <Route
           path="/home"
           element={
-            <UserRoutes user={userData}>
+            <UserRoutes >
               <Home />
             </UserRoutes>
           }
@@ -44,7 +44,7 @@ function App() {
         <Route
           path="/admin"
           element={
-            <AdminRoutes user={userData}>
+            <AdminRoutes >
               <AddProduct />
             </AdminRoutes>
           }
