@@ -44,6 +44,11 @@ const Home = () => {
     getProducts();
   }, []);
 
+  const logout = () => {
+    localStorage.clear();
+    navigate("/");
+  };
+
   return (
     <>
       <div className="sidebar">
@@ -70,6 +75,7 @@ const Home = () => {
                     onChange={({ target }) => setSearchText(target.value)}
                   />
                   <Button variant="outline-success">Search</Button>
+                       <Button onClick={logout}>Logout</Button>
                 </Form>
               </Navbar.Collapse>
             </Container>
