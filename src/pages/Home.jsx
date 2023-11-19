@@ -13,12 +13,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // put single quote for import css
 import { Link, useNavigate } from "react-router-dom";
-const navigate = useNavigate();
+
 const Home = () => {
   const [searchText, setSearchText] = useState("");
   const [fetchedproducts, setFetchedProducts] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
-
+   const navigate = useNavigate();
   const getProducts = async () => {
     const res = await axios.get(`${API_URL}product/get`);
     setFetchedProducts(res.data);
