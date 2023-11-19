@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import "../styles/Home.css";
-import { Link } from "react-router-dom";
+
 // backend
 import axios from "axios";
 import API_URL from "../../config/global";
