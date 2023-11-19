@@ -7,7 +7,13 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 h1{
+   font-size: 30px;
+    padding: 0.5rem;
+    font-weight: bold;
     text-align: center;
+    background: linear-gradient(to right,#c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 .form-label{
