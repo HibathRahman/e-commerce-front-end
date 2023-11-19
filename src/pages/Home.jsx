@@ -59,7 +59,7 @@ const Home = () => {
         <div className="navbar">
           <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid>
-              <Navbar.Brand href="#"  class="title" >TAJMAHAL SHOE MART</Navbar.Brand>
+              <Navbar.Brand href="#" class="title">TAJMAHAL SHOE MART</Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav
