@@ -52,9 +52,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="sidebar">
-        <h6 className="m-5">FIlters</h6>
-      </div>
+      
       <div className="pro-container">
         <div className="navbar">
           <Navbar expand="lg" className="bg-body-tertiary">
