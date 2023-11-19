@@ -1,19 +1,11 @@
-.sidebar {
-  width: 300px;
-  background-color: #ececec73;
-  min-height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-snap-type: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .pro-container {
-  width: calc(100% - 300px);
-  position: absolute;
-  top: 0;
-  left: 300px;
+  width: 100% ;
   background-color: #fff;
   min-height: 100vh;
   overflow-y: scroll;
@@ -21,13 +13,11 @@
 }
 .navbar {
   width: 100%;
-  background-color: azure;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
 }
-
 .title{
   font-size: 30px;
   padding: 0.5rem;
@@ -37,4 +27,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+}
+@media screen and (max-width:480px ) {
+  .title{
+    font-size: 20px;
+    padding: 5px;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .pro-container {
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ 
+  }
 }
