@@ -67,8 +67,11 @@ const Login = () => {
           Login
         </Button>
         <p>
-          If you not have an account?<Link to="/">Signup</Link>
+          If you don't have an account?<Link to="/">Signup</Link>
         </p>
+        <p className="note">Note : Admin Can Update Product Details Through this email and Password</p>
+        <p className="note">Email : tajAdmin@yopmail.com</p>
+        <p className="note">Password : 12345</p>
       </Form>
     </Container>
   );
