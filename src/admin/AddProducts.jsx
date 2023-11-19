@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-
 import "./admin.css";
 import axios from "axios";
 import API_URL from "../../config/global";
@@ -15,7 +14,7 @@ function AddProduct() {
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState("");
   const [files, setFiles] = useState([]);
-
+const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
