@@ -38,6 +38,10 @@ function AddProduct() {
       console.log(err);
     }
   };
+  const logout = () => {
+    localStorage.clear();
+    navigate("/");
+  };
 
   return (
     <div className="add-product-form">
@@ -86,6 +90,7 @@ function AddProduct() {
           </Form.Group>
         </Row>
         <Button type="submit">Add</Button>
+          <Button onClick={logout}>Logout</Button>
       </Form>
     </div>
   );
