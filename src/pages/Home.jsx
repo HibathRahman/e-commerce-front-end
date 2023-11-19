@@ -12,7 +12,8 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // put single quote for import css
-
+import { Link, useNavigate } from "react-router-dom";
+const navigate = useNavigate();
 const Home = () => {
   const [searchText, setSearchText] = useState("");
   const [fetchedproducts, setFetchedProducts] = useState([]);
@@ -46,7 +47,7 @@ const Home = () => {
 
   const logout = () => {
     localStorage.clear();
-    navigate("/");
+    navigate("/login");
   };
 
   return (
@@ -75,7 +76,7 @@ const Home = () => {
                     onChange={({ target }) => setSearchText(target.value)}
                   />
                   <Button variant="outline-success">Search</Button>
-                       <Button onClick={logout}>Logout</Button>
+                       <Button variant="outline-light" onClick={logout}>Logout</Button>
                 </Form>
               </Navbar.Collapse>
             </Container>
