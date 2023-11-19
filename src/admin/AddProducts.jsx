@@ -8,7 +8,7 @@ import "./admin.css";
 import axios from "axios";
 import API_URL from "../../config/global";
 import { Link, useNavigate } from "react-router-dom";
-const navigate = useNavigate();
+
 function AddProduct() {
   const [validated, setValidated] = useState(false);
 
