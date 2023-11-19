@@ -59,7 +59,7 @@ const Home = () => {
         <div className="navbar">
           <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid>
-              <Navbar.Brand href="#" class="title">TAJMAHAL SHOE MART</Navbar.Brand>
+              <Navbar.Brand href="#" className="title">TAJMAHAL SHOE MART</Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav
@@ -82,7 +82,7 @@ const Home = () => {
             </Container>
           </Navbar>
         </div>
-       <h1 class="title">PRODUCTS</h1>
+       <h1 className="title">PRODUCTS</h1>
         <Products products={fetchedproducts} />
       </div>
     </>
